@@ -1,0 +1,260 @@
+
+#project::before{
+    content: 'Projects';
+    position: absolute;
+    width: 60px;
+    height: 36%;
+    top: -30%;
+    border-radius: 3px;
+    background-color:orange;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    z-index: 2;
+    text-align: center;
+    line-height: 160%;
+    font-size: small;
+    /* font-weight:bold; */
+    color: white;
+    pointer-events: none;
+    display: none;
+}
+#project::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -13%;
+    background-color:orange;
+    z-index: 1;
+    transform: rotate(45deg);
+    pointer-events: none;
+    display: none;
+}
+#project.hover::after{
+    display: block;
+}
+#project.hover::before{
+    display: block;
+}
+
+#skills.hover::after{
+    display: block;
+}
+#skills.hover::before{
+    display: block;
+}
+
+#edu.hover::after{
+    display: block;
+}
+#edu.hover::before{
+    display: block;
+}
+#avatar::before{
+    content: 'Resume';
+    position: absolute;
+    width: 65px;
+    height: 25px;
+    top: -30%;
+    border-radius: 3px;
+    background-color:orange;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    z-index: 2;
+    text-align: center;
+    line-height: 25px;
+    font-size: small;
+    /* font-weight:bold; */
+    color: white;
+    pointer-events: none;
+    display: none;
+}
+
+
+#avatar::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -13%;
+    background-color:orange;
+    z-index: 1;
+    transform: rotate(45deg);
+    pointer-events: none;
+    display: none;
+}
+#project:hover{
+    background-color:beige;
+    cursor: pointer;
+}
+#skills .hover:hover{
+    
+    background-color: #c66312;
+}
+#skills:hover{
+    cursor: pointer;
+    background-color:beige;
+}
+#edu:hover{
+    cursor: pointer;
+    background-color: beige;
+}
+#project:hover::before{
+    transition: all 400ms ease-in-out;
+    animation-name: slide-right;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.35, 1.79);
+    animation-fill-mode:forwards;
+    transform-origin: 50px 50px;
+    display: block;
+}
+#project:hover::after{
+    transition: all 350ms ease-in-out;
+    animation-name: slide-right2;
+    animation-duration: 350ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+#avatar:hover::before{
+    transition: all 400ms ease-in-out;
+    animation-name: slide-right;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.35, 1.79);
+    animation-fill-mode:forwards;
+    transform-origin: 50px 50px;
+    display: block;
+}
+#avatar:hover::after{
+    transition: all 350ms ease-in-out;
+    animation-name: slide-right2;
+    animation-duration: 350ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+
+@keyframes slide-right2 {
+    0%,55%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slide-right {
+    0%{
+        /* opacity: 0; */
+        transform: scale(0.1) translate(0,30%);
+        transform-origin: center 40px;
+    }
+    50%{
+        transform:rotate(-3deg) translate(-3%,-3%);
+    }
+    80%{
+        transform: rotate(3deg) translate(3%,3%);
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+#skills:hover::before{
+    transition: all 400ms ease-in-out;
+    animation-name: slide-right;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.35, 1.79);
+    animation-fill-mode:forwards;
+    transform-origin: 50px 50px;
+    display: block;
+}
+#skills:hover::after{
+    transition: all 350ms ease-in-out;
+    animation-name: slide-right2;
+    animation-duration: 350ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+
+
+#edu:hover::before{
+    transition: all 400ms ease-in-out;
+    animation-name: slide-right;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.35, 1.79);
+    animation-fill-mode:forwards;
+    transform-origin: 50px 50px;
+    display: block;
+}
+#edu:hover::after{
+    transition: all 350ms ease-in-out;
+    animation-name: slide-right2;
+    animation-duration: 350ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+#skills::before{
+    content: 'Skills';
+    position: absolute;
+    width: 40px;
+    height: 36%;
+    top: -30%;
+    border-radius: 3px;
+    background-color:orange;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    z-index: 2;
+    text-align: center;
+    line-height: 160%;
+    font-size: small;
+    /* font-weight:bold; */
+    color: white;
+    pointer-events: none;
+    display: none;
+}
+#skills::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -13%;
+    background-color:orange;
+    z-index: 1;
+    transform: rotate(45deg);
+    pointer-events: none;
+    display: none;
+}
+#edu::before{
+    content: 'CP';
+    position: absolute;
+    width: 30px;
+    height: 36%;
+    top: -30%;
+    border-radius: 3px;
+    background-color:orange;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    z-index: 2;
+    text-align: center;
+    line-height: 160%;
+    font-size: small;
+    /* font-weight:bold; */
+    color: white;
+    pointer-events: none;
+    display: none;
+}
+#edu::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -13%;
+    background-color:orange;
+    z-index: 1;
+    transform: rotate(45deg);
+    pointer-events: none;
+    display: none;
+}
+

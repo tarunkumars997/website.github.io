@@ -1,0 +1,127 @@
+.main{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.project{
+    position: absolute;
+    margin-top: 5%;
+    width: 45%;
+    height: 80%;
+    transition: all 300ms ease-in-out;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+#project-1{
+    left: -764px;
+    margin-left: -22.5%;
+}
+#project-2{
+    left: 764px;
+    margin-left: -22.5%;
+}
+#project-3{
+    left:2292px;
+    margin-left: -22.5%;
+}
+.project:hover{
+    transform: scale(1.01) translateY(-10px);
+    box-shadow: 0px 43px 50px -45px rgba(0,0,0,0.4);
+}
+.skills-box:hover{
+    transform: scale(1.01) translateY(-10px);
+    box-shadow: 0px 43px 50px -45px rgba(0,0,0,0.4);
+}
+#main-menu:hover{
+    transform:translateY(-5px);
+
+}
+#fa-arrow-right{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transition: all 300ms ease-in-out;
+    right: 15%;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.4);
+}
+#fa-arrow-left{
+    position: absolute;
+    width: 70px;
+    transition: all 300ms ease-in-out;
+    height: 70px;
+    left: 15%;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.4);
+}
+#fa-arrow-left:hover{
+    cursor: pointer;
+    transform: scale(1.01) translateX(-10px);
+}
+#fa-arrow-right:hover{
+    cursor: pointer;
+    transform: scale(1.01) translateX(10px);
+}
+#avatar{
+    transition: all 300ms ease-in-out;
+}
+#side-menu{
+    transition: all 300ms ease-in-out;
+}
+#avatar:hover{
+    cursor: pointer;
+    background-color: beige;
+    transform: scale(1.01) translateY(-5px);
+}
+#side-menu:hover{
+    transform: scale(1.01) translateY(-5px);
+    cursor: pointer;
+    background-color: beige;
+}
+#img-rect{
+    position: absolute;
+    top: 30px;
+    width: 250px;
+    left:15%;
+    height: 200px;
+    border-radius: 10px;
+    background-image: url('bg-stripe.png');
+    background-color: #b5e2fa;
+    opacity: 0.4;
+}
+#img-rect2{
+    position: absolute;
+    top: -5%;
+    width: 150px;
+    right:15%;
+    height: 100px;
+    border-radius: 10px;
+    background-image: url('bg-stripe.png');
+    background-color: #b5e2fa;
+    opacity: 0.8;
+}
+
+#img-circle{
+    position: absolute;
+    bottom: 30px;
+    width: 100px;
+    right:25%;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('bg-stripe.png');
+    background-color: #b5e2fa;
+    opacity: 1;
+}

@@ -1,0 +1,81 @@
+.skills-main{
+    position: relative;
+    justify-content:center ;
+}
+.skills-box{
+    position: absolute;
+    margin-top: 5%;
+    width: 40%;
+    height: 80%;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 15px;
+    background-color: aliceblue;
+}
+.skills-box div{
+    position: relative;
+    width: 25%;
+    border-radius: 10px;
+    height: 25%;
+    margin-top: 20px;
+    margin-left: 15px;
+    box-shadow: 0px 3px 7px -3px rgba(0,0,0,0.4);
+    text-align: center;
+    line-height: 85px;
+    color: #0288ed;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 300ms ease-in-out;
+    background-color:azure;
+}
+.skills-box #py{
+    margin-top: 30px;
+}.skills-box #js{
+    margin-top: 30px;
+}.skills-box #html{
+    margin-top: 30px;
+}
+.skills-box #bottom{
+    margin-bottom: 40px;
+}
+.skills-box #py::after{
+    content: 'Python';
+}
+.skills-box #js::after{
+    content: 'Javascript';
+}
+.skills-box #html::after{
+    content: 'html';
+}
+.skills-box #github::after{
+    content: 'Github';
+}
+.skills-box #docker::after{
+    content: 'Docker';
+}
+.skills-box #java::after{
+    content: 'Java';
+}
+.skills-box #node::after{
+    content: 'Node Js';
+}
+.skills-box #linux::after{
+    content: 'Linux';
+}
+.skills-box #react::after{
+    content: 'React Js';
+}
+.skills-box div::after{
+    font-size: 10px;
+    margin-top: -50px;
+    text-transform: capitalize;
+    transition: all 300ms ease-in-out;
+    display: block;
+}
+.skills-box div:hover{
+    transform: scale(1.01) translateY(-10px);
+}

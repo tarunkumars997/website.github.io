@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="edu.css">
+    
+    <script src="https://kit.fontawesome.com/0095dc6ceb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="img-rect2"></div>
+        <div id="avatar"><i class="fa-solid fa-user-tie fa-2xl"></i></div>
+        <div id="main-menu">
+            <div id="project" class="hover"><i class="i fa-solid fa-laptop-code fa-lg" id="icon1"></i></div>
+            <div id="skills"><i class="i fa-solid fa-code fa-lg" id="icon2"></i></div>
+            <div id="edu"><i class="i fa-solid fa-graduation-cap fa-lg" id="icon3"></i></div>
+        </div>
+        <div id="side-menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
+    </div>
+    <div class="main show">
+        <div id="img-rect"></div>
+        <div id="img-circle"></div>
+        <div id="fa-arrow-right"><i class="fa-solid fa-arrow-right fa-lg"></i></div>
+        <div id="fa-arrow-left"><i class="fa-solid fa-arrow-left fa-lg"></i></div>
+        <div id="project-1" class="project">          
+            <div class="project-details">
+                <div class="project-info">
+                  <h1>Transfer Learning for Image Classifcation</h1>
+                  <p><strong>Supervisor:</strong> Prof. Anurag Mittal</p>
+                  <p><strong>Description:</strong></p>
+                  <p>Implemented transfer learning in PyTorch for image classifcation. Utilized a pre-trained VGG16 model from torch.hub
+                    and fne-tuned it on a custom dataset by modifying the fnal fully connected layers.</p>
+                  <div class="project-info">
+                    <p><Strong>Tech Stack:</Strong>
+                    <i class="fa-brands fa-python fa-2xl"></i>
+                    </p>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img src="deep-learning.png" alt="Project Image">
+                </div>
+              </div>
+              
+        </div>
+        <div id="project-2" class="project">
+            <div class="project-details">
+                <div class="project-info">
+                  <h1>5G Cellular Network Security</h1>
+                  <p><strong>Supervisor:</strong> Prof. Vireshwar Kumar</p>
+                  <p><strong>Description:</strong></p>
+                  <p>We systematically analyze 5G cellular networks, discover new exploitable attack surfaces, and develop defense mechanisms for mitigating them.</p>
+                  <p>We are identifying and addressing exploitable attacks in 5G networks, and we validate our findings by testing them across various 5G simulators.</p>
+                  <div class="project-info">
+                    <p><Strong>Tech Stack:</Strong>
+                    <i class="fa-brands fa-python fa-2xl"></i>
+                    <i class="fa-brands fa-docker fa-2xl"></i>
+                    <i class="fa-brands fa-linux fa-2xl"></i>
+                    </p>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img src="wifi.png" alt="Project Image">
+                </div>
+              </div>
+            <!-- <div id="proj-text">
+                <p id="proj-content">Implemented a multithreaded PSP network simulation for fle distribution among multiple clients.</p>
+            </div>
+            <div id="proj-img">
+                
+            <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+            </div>
+            
+            <div id="proj-tech">
+                <i id="t1"></i>
+                <i id="t2"></i>
+            </div> -->
+            
+            
+        </div>
+        <div id="project-3" class="project">
+            <div class="project-details">
+                <div class="project-info">
+                  <h1>Real-time Network Multiplayer Game</h1>
+                  <p><strong>Supervisor:</strong> Prof.  Rahul Narain</p>
+                  <p><strong>Description:</strong></p>
+                  <p>Created a real-time multiplayer game that can be played over a network using React JS, Socket IO, Node JS and
+                    Express.Two players could play the game from diferent systems provided they are on the same network.
+                   </p>
+                  <div class="project-info">
+                    <p><Strong>Tech Stack:</Strong>
+                    <i class="fa-brands fa-react fa-2xl"></i>
+                    <i class="fa-brands fa-node fa-2xl"></i>
+                    </p>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img src="multiplayer.png" alt="Project Image">
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="skills-main hide">
+        <div id="img-rect"></div>
+        <div id="img-circle"></div>
+        <div class="skills-box">
+          <div id="py"><i class="fa-brands fa-python fa-2xl"></i></div>
+          <div id="js"><i class="fa-brands fa-square-js fa-2xl"></i></div>
+          <div id="html"><i class="fa-brands fa-html5 fa-2xl"></i></div>
+          <div id="github"><i class="fa-brands fa-github fa-2xl"></i></div>
+          <div id="docker"><i class="fa-brands fa-docker fa-2xl"></i></div>
+          <div id="java"><i class="fa-brands fa-java fa-2xl"></i></div>
+          <div id="node"><i class="fa-brands fa-node fa-2xl"></i></div>
+          <div id="linux"><i class="fa-brands fa-linux fa-2xl"></i></div>
+          <div id="react"><i class="fa-brands fa-react fa-2xl"></i></div>
+        </div>
+    </div>
+    
+    <div class="edu-main hide">
+      <div class="edu-box">
+        <div id="cf">
+          <div id="edu-img" class="cf"></div>
+          <div id="edu-text"><p>Reached <a href="https://codeforces.com/profile/Jsbshy2" id="cf1">Candidate Master</a>. Solved more than 1500 problems and reached maximum rating of 1947. </p></div>
+        </div>
+        <div id="cc">
+          <div id="edu-img" class="cc"></div>
+          <div id="edu-text" ><p>Reached <a href="https://codeforces.com/profile/Jsbshy2" id="cc1">6 star</a>. Solved more than 500 problems and reached maximum rating of 2274. </p></div></div>
+        <div id="leetcode">
+          <div id="edu-img" class="leetcode"></div>
+          <div id="edu-text"><p>Reached <a href="https://codeforces.com/profile/Jsbshy2" id="leetcode1">Master</a>. Solved more than 500 problems and reached maximum rating of 2274. </p></div></div>
+      </div>
+
+    </div>
+    <!-- <div class="footer"></div> -->
+    <!-- <div class="test"></div> -->
+</body>
+<script src="script.js">
+</script>
+</html>
